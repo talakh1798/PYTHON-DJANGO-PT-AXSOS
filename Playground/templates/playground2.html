@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>playground2</title>
+</head>
+<style>
+    .header{
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .box{
+        box-sizing: border-box;
+        border: 1px black solid;
+        background-color:aqua;
+        width:200px;
+        height: 200px;
+        margin: 20px;
+    }
+</style>
+<body>
+    <h1 class="header" >Welcome!</h1>
+    <div class="container">
+        {% for num in range (count)%}
+        <div class="box"></div>
+        {%endfor%}
+    </div>
+
+    
+</body>
+</html>

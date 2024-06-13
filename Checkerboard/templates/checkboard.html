@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkboard</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <table>
+        {%for _ in range(boxes)%}
+            <tr>
+                {%for _ in range (boxes)%}
+                <td class="color1"></td>
+                <td class="color2"></td>
+                {%endfor%}
+            </tr>
+            <tr>
+                {%for _ in range (boxes)%}
+                <td class="color2"></td>
+                <td class="color1"></td>
+                {%endfor%}
+            </tr>
+        {%endfor%}
+    </table>
+
+</body>
+</html>
